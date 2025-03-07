@@ -79,7 +79,7 @@
     <div class="container">
         <h1>♻️এড দেখে ইনকাম করুন ♻️</h1>
         <h2>♻️বিকাশ নগদে টাকা তুলুন ♻️</h2>
-        <h3>সর্বনিম্ন উইথড্র এমাউন্ট ৳50</h3>
+        <h3>সর্বনিম্ন উইথড্র এমাউন্ট ৳40</h3>
         <div class="progress-circle" id="progress-circle">0%</div>
         <p>Watched Ads: <span id="watched-ads">0</span></p>
         <p>Earned Points: ৳<span id="earned-points">0.00</span></p>
@@ -122,7 +122,7 @@
             if (typeof show_9045962 === 'function') {
                 show_9045962().then(() => {
                     watchedAds++;
-                    earnedPoints += 2;
+                    earnedPoints += 3;
                     localStorage.setItem('watchedAds', watchedAds);
                     localStorage.setItem('earnedPoints', earnedPoints.toFixed(2));
                     document.getElementById('watched-ads').textContent = watchedAds;
@@ -149,7 +149,7 @@
             const method = document.getElementById('payment-method').value;
             const phone = document.getElementById('phone-number').value;
 
-            if (amount < 50 || amount > earnedPoints) {
+            if (amount < 100 || amount > earnedPoints) {
                 alert('Invalid withdrawal amount.');
                 return;
             }
